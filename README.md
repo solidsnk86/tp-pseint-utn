@@ -5,7 +5,7 @@
 
 ---
 
-## Calculadora de Materiales de Construcción
+<h1>Calculadora de Materiales de Construcción</h1>
 
 ### Descripción
 
