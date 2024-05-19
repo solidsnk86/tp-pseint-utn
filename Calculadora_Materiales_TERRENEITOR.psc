@@ -3,60 +3,78 @@ Algoritmo CalculadoraMateriales
 	menu();
 FinAlgoritmo
 
-SubProceso tituloPrograma
+SubProceso eva00
+    Definir i, j, k Como Entero;
+    Definir matriz Como Caracter;
+    Dimension matriz[4, 4];
+    Para i <- 0 Hasta 3 Con Paso 1 Hacer
+        Para j <- 0 Hasta 0 Con Paso 1 Hacer
+			matriz[i, j] <- "| |";
+        FinPara
+    FinPara
+    Para i <- 0 Hasta 3 Con Paso 1 Hacer
+        Para j <- 0 Hasta 0 Con Paso 1 Hacer
+            Escribir Sin Saltar matriz[i,j];
+        FinPara
+        Escribir "";
+    FinPara
+FinSubProceso
+
+SubProceso eva01
     Definir i, j Como Entero;
     Definir matriz Como Caracter;
     Dimension matriz[10, 10];
     Para i <- 0 Hasta 1 Con Paso 1 Hacer
-        Para j <- 0 Hasta 1 Con Paso 1 Hacer
-            matriz[i, j] <- "****CALCULADORA***"; 
+        Para j <- 0 Hasta 0 Con Paso 1 Hacer
+            matriz[i, j] <- "| |______|"; 
         FinPara
     FinPara
     Para i <- 0 Hasta 1 Con Paso 1 Hacer
-        Para j <- 0 Hasta 1 Con Paso 1 Hacer
+        Para j <- 0 Hasta 0 Con Paso 1 Hacer
             Escribir Sin Saltar matriz[i, j];
         FinPara
         Escribir "";
     FinPara
 FinSubProceso
 
-SubProceso tituloGrupo
-    Definir i, j Como Entero;
-    Definir matriz Como Caracter;
-    Dimension matriz[2, 2];
-    Para i <- 0 Hasta 1 Con Paso 1 Hacer
-        Para j <- 0 Hasta 1 Con Paso 1 Hacer
-            matriz[i, j] <- "LOS**TERRENEITOR**"; 
-        FinPara
-    FinPara
-    Para i <- 0 Hasta 1 Con Paso 1 Hacer
-        Para j <- 0 Hasta 1 Con Paso 1 Hacer
-            Escribir Sin Saltar matriz[i, j];
-        FinPara
-        Escribir "";
-    FinPara
+SubProceso eva02
+	Definir i, j Como Entero;
+	Definir matriz como Caracter;
+	Dimension matriz[4, 4];
+	Para i<-0 Hasta 3 Con Paso 1 Hacer
+		Para j<-0 Hasta 1 Con Paso 1 Hacer
+			matriz[i,j] <- "/ /"; 
+		FinPara
+	FinPara
+	Para i<-0 Hasta 3 Con Paso 1 Hacer
+		Para j<-0 Hasta 1 Con Paso 1 Hacer
+			Escribir matriz[i, j];
+		FinPara
+	FinPara
 FinSubProceso
 
 SubProceso menu
 	Definir opcion Como Entero;
 	Escribir  "";
 	Escribir  "";
-	tituloGrupo;
-	tituloPrograma;
+	eva00;
+	eva01;
 	Escribir  "";
 	Escribir  "";
 	Mientras Verdadero Hacer
-		Escribir "------------------------------";
-		Escribir "Seleccione una opción: ";
-		Escribir "1. Calcular muro de ladrillos";
-		Escribir "2. Calcular viga de hormigón";
-		Escribir "3. Calcular columnas de hormigón";
-		Escribir "4. Calcular contrapisos";
-		Escribir "5. Calcular techo";
-		Escribir "6. Calcular pisos";
-		Escribir "7. Calcular pintura";
-		Escribir "8. Calcular iluminación";
-		Escribir "9. Salir";
+		Escribir "|-|-------------------------------|";
+		Escribir "| |  Seleccione una opción: ","      |";
+		Escribir "|-|-------------------------------|";
+		Escribir "|1| Calcular muro de ladrillos    |";
+		Escribir "|2| Calcular viga de hormigón     |";
+		Escribir "|3| Calcular columnas de hormigón |";
+		Escribir "|4| Calcular contrapisos          |";
+		Escribir "|5| Calcular techo                |";
+		Escribir "|6| Calcular pisos                |";
+		Escribir "|7| Calcular pintura              |";
+		Escribir "|8| Calcular iluminación          |";
+		Escribir "|9| Salir                         |";
+		Escribir "|-|-------------------------------|";
 		Leer opcion;
 		Segun opcion Hacer 
 			Caso 1:
@@ -107,7 +125,7 @@ SubAlgoritmo calcularMuros
 	// Cálculo de la superficie
 	superficie_muro <- altura_muro*ancho_muro;
 	// Pedimos que indique qué espesor tendrá el muro (solo hay dos opciones 20 ó 30 cm)
-	Escribir 'Digite los centrímetros de espesor del muro a construir (20 ó 30)';
+	Escribir 'Digite los centrímetros de espesor del muro a construir (20cm/30cm)';
 	Leer espesor_muro;
 	Si espesor_muro <- 20 Entonces
 		ladrillos_final <- 90*superficie_muro;
@@ -121,7 +139,7 @@ SubAlgoritmo calcularMuros
 		arena_final <- 0.115*superficie_muro;
 		Escribir ''Sin Saltar;
 		Si espesor_muro <> 30 Y espesor_muro <> 20 Entonces
-			Escribir "Ingresa lo que te dicen por favor";
+			Escribir "Ingrese lo que te dicen por favor";
 			Leer espesor_muro;
 		FinSi
 FinSi
