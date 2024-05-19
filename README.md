@@ -1,4 +1,9 @@
-# Proyecto Integrador de PSeInt UTN-FRSR
+<div align="center">
+<h1>Proyecto Integrador de PSeInt UTN-FRSR</h1>
+    <img style="border-radius: 100px;" src="https://raw.githubusercontent.com/solidsnk86/class-git/master/logo_los_terreneitor.jpg" width="120" height="120" />
+</div>
+
+---
 
 ## Calculadora de Materiales de Construcción
 
@@ -30,8 +35,8 @@ El algoritmo principal del programa está diseñado para ser sencillo y eficient
 
 ### Equipo
 
-Este proyecto fue desarrollado como parte del curso de Programación en PSeInt de la UTN-FRSR de grupo `Los Terreneitors`.
+Este proyecto fue desarrollado como parte del curso de Programación en PSeInt de la UTN-FRSR de grupo `Los Terreneitor`.
 
 ---
 
-Este archivo README.md sirve como portada y guía para el uso del programa, proporcionando una visión general de sus funcionalidades y estructura.
+Este archivo *README.md* sirve como portada y guía para el uso del programa, proporcionando una visión general de sus funcionalidades y estructura.
