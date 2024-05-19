@@ -3,9 +3,7 @@
     <img style="border-radius: 100px;" src="https://raw.githubusercontent.com/solidsnk86/class-git/master/logo_los_terreneitor.jpg" width="120" height="120" />
 </div>
 
----
-
-<h1>Calculadora de Materiales de Construcción</h1>
+<h3>Calculadora de Materiales de Construcción</h3>
 
 ### Descripción
 
