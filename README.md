@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Proyecto Integrador de PSeInt UTN-FRSR</h1>
-    <img style="border-radius: 100px;" src="https://raw.githubusercontent.com/solidsnk86/class-git/master/logo_los_terreneitor.jpg" width="120" height="120" />
+    <img src="https://raw.githubusercontent.com/solidsnk86/class-git/master/logo_los_terreneitor.jpg" width="160" height="160" />
 </div>
 
 <h3>Calculadora de Materiales de Construcción</h3>
