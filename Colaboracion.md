@@ -47,7 +47,7 @@ git push origin nombre-de-la-rama
 
 - En GitHub, vamos a nuestro repositorio forkeado y encontrarás un botón para crear un nuevo pull request. Sigue las instrucciones para solicitar la incorporación de tus cambios en el repositorio original.
 
->[!Important]
+>[!Importante]
 >Para poder hacer un paste en la consola de git bash después de haber copiado algo vamos a usar (<b>shift</b> + <b>Insert</b>).
 
 ### Resumen del Flujo
