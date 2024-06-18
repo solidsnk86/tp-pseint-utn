@@ -39,6 +39,8 @@ Este archivo *README.md* sirve como portada y guía para el uso del programa, pr
 
 #
 
+Revisión del proyecto a la fecha 
+
 <div align="center">
 UTN - TP PSEINT 2024
 </div>
