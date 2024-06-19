@@ -135,7 +135,7 @@ SubAlgoritmo calcularMuros
 		Escribir sin saltar "";
 	SiNo
 		// Espesor_muro <- 30
-		ladrillos_final <- 120*superficie_muro;
+		ladrillos_final <- 14*superficie_muro;
 		cemento_final <- 15.2*superficie_muro;
 		arena_final <- 0.115*superficie_muro;
 		Escribir ''Sin Saltar;
@@ -146,13 +146,13 @@ SubAlgoritmo calcularMuros
 FinSi
 // Mostramos al usuario la superficie total en m2
 Escribir "";
-Escribir "|-----------------------------------CALCULO DEL MURO------------------------------------|";
+Escribir "|------------------------------------CALCULO DEL MURO-------------------------------------|";
 Escribir "|";
 	Escribir '| La superficie total del muro es: ', superficie_muro, 'm2';
 	// Ahora mostramos la cantidad de material que requerirá	
-	Escribir "| Para su construcción necesitará: ",cemento_final,"kg de cemento, ",redon(ladrillos_final)," ladrillos y ",arena_final,"m3 de arena.";
+	Escribir "| Para su construcción necesitará: ",cemento_final,"kg de cemento, ",ladrillos_final," ladrillos de ", espesor_muro, 'cm ',arena_final,"m3 de arena.";
 	Escribir "|";	
-	Escribir "|---------------------------------FIN CALCULO DEL MURO----------------------------------|";
+	Escribir "|----------------------------------FIN CALCULO DEL MURO-----------------------------------|";
 	Escribir "";
 FinSubAlgoritmo
 
