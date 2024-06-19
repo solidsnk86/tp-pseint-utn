@@ -36,12 +36,13 @@ El algoritmo principal del programa está diseñado para ser sencillo y eficient
 Este proyecto fue desarrollado como parte del curso de Programación en PSeInt de la UTN-FRSR del grupo `Los Terreneitor`.
 
 `### Integrantes:`
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
+
+1. Maximiliano Tomio
+2. Elias Jacob
+3. Marina Rebolloso
+4. Agustín Salinas
+5. Franco Morales
+6. Juan Pablo Batallón
 7. Gabriel calcagni 🐟
 
 Este archivo *README.md* sirve como portada y guía para el uso del programa, proporcionando una visión general de sus funcionalidades y estructura.
