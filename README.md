@@ -39,6 +39,15 @@ Este archivo *README.md* sirve como portada y guía para el uso del programa, pr
 
 #
 
+`Participantes:`
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. Gabriel Calcagni 🐟
+
 <div align="center">
 UTN - TP PSEINT 2024
 </div>
