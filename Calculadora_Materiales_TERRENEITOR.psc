@@ -3,60 +3,79 @@ Algoritmo CalculadoraMateriales
 	menu();
 FinAlgoritmo
 
-SubProceso tituloPrograma
+SubProceso eva00
+    Definir i, j, k Como Entero;
+    Definir matriz Como Caracter;
+    Dimension matriz[4, 4];
+    Para i <- 0 Hasta 3 Con Paso 1 Hacer
+        Para j <- 0 Hasta 0 Con Paso 1 Hacer
+			matriz[i, j] <- "| |";
+        FinPara
+    FinPara
+    Para i <- 0 Hasta 3 Con Paso 1 Hacer
+        Para j <- 0 Hasta 0 Con Paso 1 Hacer
+            Escribir Sin Saltar matriz[i,j];
+        FinPara
+        Escribir "";
+    FinPara
+FinSubProceso
+
+SubProceso eva01
     Definir i, j Como Entero;
     Definir matriz Como Caracter;
     Dimension matriz[10, 10];
     Para i <- 0 Hasta 1 Con Paso 1 Hacer
-        Para j <- 0 Hasta 1 Con Paso 1 Hacer
-            matriz[i, j] <- "****CALCULADORA***"; 
+        Para j <- 0 Hasta 0 Con Paso 1 Hacer
+            matriz[i, j] <- "| |______|"; 
         FinPara
     FinPara
     Para i <- 0 Hasta 1 Con Paso 1 Hacer
-        Para j <- 0 Hasta 1 Con Paso 1 Hacer
+        Para j <- 0 Hasta 0 Con Paso 1 Hacer
             Escribir Sin Saltar matriz[i, j];
         FinPara
         Escribir "";
     FinPara
 FinSubProceso
 
-SubProceso tituloGrupo
-    Definir i, j Como Entero;
-    Definir matriz Como Caracter;
-    Dimension matriz[2, 2];
-    Para i <- 0 Hasta 1 Con Paso 1 Hacer
-        Para j <- 0 Hasta 1 Con Paso 1 Hacer
-            matriz[i, j] <- "LOS**TERRENEITOR**"; 
-        FinPara
-    FinPara
-    Para i <- 0 Hasta 1 Con Paso 1 Hacer
-        Para j <- 0 Hasta 1 Con Paso 1 Hacer
-            Escribir Sin Saltar matriz[i, j];
-        FinPara
-        Escribir "";
-    FinPara
+SubProceso eva02
+	Definir i, j Como Entero;
+	Definir matriz como Caracter;
+	Dimension matriz[4, 4];
+	Para i<-0 Hasta 3 Con Paso 1 Hacer
+		Para j<-0 Hasta 1 Con Paso 1 Hacer
+			matriz[i,j] <- "/ /"; 
+		FinPara
+	FinPara
+	Para i<-0 Hasta 3 Con Paso 1 Hacer
+		Para j<-0 Hasta 1 Con Paso 1 Hacer
+			Escribir matriz[i, j];
+		FinPara
+	FinPara
 FinSubProceso
 
 SubProceso menu
 	Definir opcion Como Entero;
 	Escribir  "";
 	Escribir  "";
-	tituloGrupo;
-	tituloPrograma;
+	eva00;
+	eva01;
 	Escribir  "";
 	Escribir  "";
 	Mientras Verdadero Hacer
-		Escribir "------------------------------";
-		Escribir "Seleccione una opción: ";
-		Escribir "1. Calcular muro de ladrillos";
-		Escribir "2. Calcular viga de hormigón";
-		Escribir "3. Calcular columnas de hormigón";
-		Escribir "4. Calcular contrapisos";
-		Escribir "5. Calcular techo";
-		Escribir "6. Calcular pisos";
-		Escribir "7. Calcular pintura";
-		Escribir "8. Calcular iluminación";
-		Escribir "9. Salir";
+		Escribir "|-|-------------------------------|";
+		Escribir "| |  Seleccione una opciï¿½n: ","      |";
+		Escribir "|-|-------------------------------|";
+		Escribir "|1| Calcular muro de ladrillos    |";
+		Escribir "|2| Calcular viga de hormigï¿½n     |";
+		Escribir "|3| Calcular columnas de hormigï¿½n |";
+		Escribir "|4| Calcular contrapisos          |";
+		Escribir "|5| Calcular techo                |";
+		Escribir "|6| Calcular pisos                |";
+		Escribir "|7| Calcular pintura              |";
+		Escribir "|8| Calcular iluminaciï¿½n          |";
+		Escribir "|9| Salir                         |";
+		Escribir "|-|-------------------------------|";
+		Escribir "";
 		Leer opcion;
 		Segun opcion Hacer 
 			Caso 1:
@@ -78,7 +97,7 @@ SubProceso menu
 			Caso 9:
 				salir(opcion);
 			De Otro Modo:
-				Escribir "Opción inválida";
+				Escribir "Opciï¿½n invï¿½lida";
 		FinSegun
 	FinMientras
 FinSubProceso
@@ -99,15 +118,15 @@ SubAlgoritmo calcularMuros
 	Definir espesor_muro, cant_ladrillos, ladrillos_final Como Entero;
 	Definir altura_muro, ancho_muro, superficie_muro Como Real;
 	Definir cemento_final, arena_final Como Real;
-	// Pedimos los datos para calcular 1° la superficie del muro
+	// Pedimos los datos para calcular 1ï¿½ la superficie del muro
 	Escribir 'Digite la altura del muro en metros';
 	Leer altura_muro;
 	Escribir 'Digite el ancho del muro en metros';
 	Leer ancho_muro;
-	// Cálculo de la superficie
+	// Cï¿½lculo de la superficie
 	superficie_muro <- altura_muro*ancho_muro;
-	// Pedimos que indique qué espesor tendrá el muro (solo hay dos opciones 20 ó 30 cm)
-	Escribir 'Digite los centrímetros de espesor del muro a construir (20 ó 30)';
+	// Pedimos que indique quï¿½ espesor tendrï¿½ el muro (solo hay dos opciones 20 ï¿½ 30 cm)
+	Escribir 'Digite los centrï¿½metros de espesor del muro a construir (20cm/30cm)';
 	Leer espesor_muro;
 	Si espesor_muro <- 20 Entonces
 		ladrillos_final <- 90*superficie_muro;
@@ -121,15 +140,15 @@ SubAlgoritmo calcularMuros
 		arena_final <- 0.115*superficie_muro;
 		Escribir ''Sin Saltar;
 		Si espesor_muro <> 30 Y espesor_muro <> 20 Entonces
-			Escribir "Ingresa lo que te dicen por favor";
+			Escribir "Ingrese el espesor que se le proprciona (20 o 30)";
 			Leer espesor_muro;
 		FinSi
 FinSi
 // Mostramos al usuario la superficie total en m2
 	Escribir "";
 	Escribir 'La superficie total del muro es: ', superficie_muro, 'm2';
-	// Ahora mostramos la cantidad de material que requerirá
-	Escribir "Para su construcción necesitará: ",cemento_final,"kg. de cemento, ",redon(ladrillos_final)," ladrillos y ",arena_final,"m3 de arena.";
+	// Ahora mostramos la cantidad de material que requerirï¿½
+	Escribir "Para su construcciï¿½n necesitarï¿½: ",cemento_final,"kg. de cemento, ",redon(ladrillos_final)," ladrillos y ",arena_final,"m3 de arena.";
 	Escribir "";
 FinSubAlgoritmo
 
@@ -138,13 +157,13 @@ SubProceso calcularViga
     Definir respuesta Como Caracter;
     Definir totalCemento, totalArena, totalPiedra, totalHierro Como Real;
 	
-    // Inicialización de acumuladores
+    // Inicializaciï¿½n de acumuladores
     totalCemento <- 0;
     totalArena <- 0;
     totalPiedra <- 0;
     totalHierro <- 0;
 	
-    // Ciclo para calcular materiales de múltiples vigas
+    // Ciclo para calcular materiales de mï¿½ltiples vigas
     Repetir
         // Solicitar el largo de la viga al usuario
         Escribir "Ingrese el largo de la viga en metros: ";
@@ -170,7 +189,7 @@ SubProceso calcularViga
         totalHierro <- totalHierro + hierro;
 		
         // Preguntar al usuario si desea calcular materiales para otra viga
-        Escribir "¿Desea calcular los materiales de otra viga? (s/n): ";
+        Escribir "ï¿½Desea calcular los materiales de otra viga? (s/n): ";
         Leer respuesta;
     Hasta Que respuesta = "n";
 	
@@ -204,7 +223,7 @@ Subproceso calcularColumna
     hierro10 <- 6 * columnaTotal;    //Por metro lineal se necesitan 6m de hierro del 10".
     hierro4 <- 3 * columnaTotal;     //Por metro lineal se necesitan 3m de hierro del 4".
 	
-    Escribir "Para ", cantidadColumna, " columna/s de ", largoColumna, " metros de largo y ", anchoColumna, " metros de ancho, se necesitarán:";
+    Escribir "Para ", cantidadColumna, " columna/s de ", largoColumna, " metros de largo y ", anchoColumna, " metros de ancho, se necesitarï¿½n:";
     Escribir "Cemento: ", cemento, " kg";
     Escribir "Arena: ", arena, " m3";
     Escribir "Piedra: ", piedra, " m2";
@@ -215,7 +234,7 @@ FinSubproceso
 SubProceso calcularContrapisos
 	Definir espesor, ancho, largo, volumenCemento, volumenArena, volumenPiedra, aux como Real;
 	
-	Escribir "Ingrese el espesor del contrapiso en centímetros:";
+	Escribir "Ingrese el espesor del contrapiso en centï¿½metros:";
 	Leer espesor;
 	Escribir "Ingrese el ancho del contrapiso en metros:";
 	Leer ancho;
@@ -229,10 +248,10 @@ SubProceso calcularContrapisos
 	volumenArena <- espesor * ancho * largo * 0.45;
 	volumenPiedra <- espesor * ancho * largo * 0.9;
 	
-	Escribir "Para un contrapiso de ", espesor, " centímetros de espesor, ", ancho, " metros de ancho y ", largo, " metros de largo se necesitan:";
+	Escribir "Para un contrapiso de ", espesor, " centï¿½metros de espesor, ", ancho, " metros de ancho y ", largo, " metros de largo se necesitan:";
 	Escribir " * ", volumenCemento, " kilogramos de cemento";
-	Escribir " * ", volumenArena, " metros cúbicos de arena";
-	Escribir " * ", volumenPiedra, " metros cúbicos de piedra";
+	Escribir " * ", volumenArena, " metros cï¿½bicos de arena";
+	Escribir " * ", volumenPiedra, " metros cï¿½bicos de piedra";
 FinSubProceso
 
 SubProceso Calculartecho
@@ -259,10 +278,10 @@ SubProceso Calculartecho
 	cantidadHierro6 <- 4* areaTecho; // metros
 	
 	//Mostar los resultados al usuario 
-	Escribir "Para constuir el techo necesitarás: ";
+	Escribir "Para constuir el techo necesitarï¿½s: ";
 	Escribir "Cantidad de cemento: ", cantidadCemento, " kg";
-	Escribir "Cantidad de arena: ", cantidadArena," m³";
-	Escribir "Cantidad de piedra: ", cantidadPierda, "m³";
+	Escribir "Cantidad de arena: ", cantidadArena," mï¿½";
+	Escribir "Cantidad de piedra: ", cantidadPierda, "mï¿½";
 	Escribir "Cantidad de hierro del 8: ", cantidadHierro8, " m";
 	Escribir "Cantidad de hierro del 6: ", cantidadHierro6, " m";
 	
@@ -282,20 +301,20 @@ SubProceso calcularPisos
 	//Se calcula la superficie agregandole un 10% extra por recorte de material
 	superficie_piso<-(ancho_piso*largo_piso);
 	Escribir "";
-	Escribir "Superficie del piso: ", superficie_piso+(0.10*superficie_piso), " m²";
+	Escribir "Superficie del piso: ", superficie_piso+(0.10*superficie_piso), " mï¿½";
 	Escribir "";
 FinSubProceso
 
 subProceso calcularPintura
 	Definir litros_pintura, superficie, altura, long, num como reales;
-    Escribir "Cálculo de la cantidad de litros de pintura que necesita por superficie";
+    Escribir "Cï¿½lculo de la cantidad de litros de pintura que necesita por superficie";
 	Escribir "";
 	Escribir "";
 	pedirDatos(altura, long);
 	superficie <- altura * long;
 	litros_pintura <- superficie / 6;
 	Escribir "";
-	Escribir "Usted necesita ", litros_pintura, " litros de pintura para pintar una superficie ",superficie,"m².";
+	Escribir "Usted necesita ", litros_pintura, " litros de pintura para pintar una superficie ",superficie,"mï¿½.";
 	Escribir "";
 FinSubProceso
 
@@ -309,12 +328,12 @@ FinSubProceso
 SubProceso  CalcularIluminacion
     Definir superficie, iluminacion Como Real;
     
-    Escribir "Ingrese la superficie de la habitación en metros cuadrados:";
+    Escribir "Ingrese la superficie de la habitaciï¿½n en metros cuadrados:";
     Leer superficie;
     
     iluminacion <- superficie * 0.20;
     
-    Escribir "Superficie mínima de iluminación natural: ", iluminacion;
+    Escribir "Superficie mï¿½nima de iluminaciï¿½n natural: ", iluminacion;
 FinSubProceso
 
 SubProceso salir(opcion)

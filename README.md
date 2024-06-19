@@ -33,7 +33,7 @@ El algoritmo principal del programa está diseñado para ser sencillo y eficient
 
 ### Equipo
 
-Este proyecto fue desarrollado como parte del curso de Programación en PSeInt de la UTN-FRSR de grupo `Los Terreneitor`.
+Este proyecto fue desarrollado como parte del curso de Programación en PSeInt de la UTN-FRSR del grupo `Los Terreneitor`.
 
 `### Integrantes:`
 1. 
@@ -44,6 +44,12 @@ Este proyecto fue desarrollado como parte del curso de Programación en PSeInt d
 6. 
 7. Gabriel calcagni 🐟
 
----
-
 Este archivo *README.md* sirve como portada y guía para el uso del programa, proporcionando una visión general de sus funcionalidades y estructura.
+
+#
+
+<div align="center">
+UTN - TP PSEINT 2024
+</div>
+
+
