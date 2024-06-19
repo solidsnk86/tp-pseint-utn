@@ -63,16 +63,16 @@ SubProceso menu
 	Escribir  "";
 	Mientras Verdadero Hacer
 		Escribir "|-|-------------------------------|";
-		Escribir "| |  Seleccione una opciÃ³n: ","      |";
+		Escribir "| |  Seleccione una opción: ","      |";
 		Escribir "|-|-------------------------------|";
 		Escribir "|1| Calcular muro de ladrillos    |";
-		Escribir "|2| Calcular viga de hormigÃ³n     |";
-		Escribir "|3| Calcular columnas de hormigÃ³n |";
+		Escribir "|2| Calcular viga de hormigón     |";
+		Escribir "|3| Calcular columnas de hormigón |";
 		Escribir "|4| Calcular contrapisos          |";
 		Escribir "|5| Calcular techo                |";
 		Escribir "|6| Calcular pisos                |";
 		Escribir "|7| Calcular pintura              |";
-		Escribir "|8| Calcular iluminaciÃ³n          |";
+		Escribir "|8| Calcular iluminaci?n          |";
 		Escribir "|9| Salir                         |";
 		Escribir "|-|-------------------------------|";
 		Escribir "";
@@ -97,7 +97,7 @@ SubProceso menu
 			Caso 9:
 				salir(opcion);
 			De Otro Modo:
-				Escribir "Opci?n inv?lida";
+				Escribir "Opción inválida";
 		FinSegun
 	FinMientras
 FinSubProceso
@@ -126,7 +126,7 @@ SubAlgoritmo calcularMuros
 	// C?lculo de la superficie
 	superficie_muro <- altura_muro*ancho_muro;
 	// Pedimos que indique que espesor tendra el muro (solo hay dos opciones 20 o 30 cm)
-	Escribir 'Digite los centï¿½metros de espesor del muro a construir (20cm/30cm)';
+	Escribir 'Digite los centímetros de espesor del muro a construir (20cm/30cm)';
 	Leer espesor_muro;
 	Si espesor_muro <- 20 Entonces
 		ladrillos_final <- 90*superficie_muro;
@@ -149,8 +149,8 @@ Escribir "";
 Escribir "|-----------------------------------CALCULO DEL MURO------------------------------------|";
 Escribir "|";
 	Escribir '| La superficie total del muro es: ', superficie_muro, 'm2';
-	// Ahora mostramos la cantidad de material que requerirÃ¡	
-	Escribir "| Para su construcciï¿½n necesitarï¿½: ",cemento_final,"kg de cemento, ",redon(ladrillos_final)," ladrillos y ",arena_final,"m3 de arena.";
+	// Ahora mostramos la cantidad de material que requerirá	
+	Escribir "| Para su construcción necesitará: ",cemento_final,"kg de cemento, ",redon(ladrillos_final)," ladrillos y ",arena_final,"m3 de arena.";
 	Escribir "|";	
 	Escribir "|---------------------------------FIN CALCULO DEL MURO----------------------------------|";
 	Escribir "";
@@ -311,16 +311,16 @@ FinSubProceso
 
 subProceso calcularPintura
 	Definir litros_pintura, superficie, altura, long, num como reales;
-    Escribir "Cï¿½lculo de la cantidad de litros de pintura que necesita por superficie";
+    Escribir "Cálculo de la cantidad de litros de pintura que necesita por superficie";
 	Escribir "";
 	Escribir "";
 	pedirDatos(altura, long);
 	superficie <- altura * long;
 	litros_pintura <- superficie / 6;
 	Escribir "|------------------------------CALCULO DE PINTURA-------------------------------|";
-	Escribir "|";
-	Escribir "| Usted necesita ", litros_pintura, " litros de pintura para pintar una superficie ",superficie,"mï¿½ |";
-	Escribir "|";
+	Escribir "|                                                                               |";
+	Escribir "| Usted necesita ", litros_pintura, " litros de pintura para pintar una superficie ",superficie,"m²";
+	Escribir "|                                                                               |";
 	Escribir "|----------------------------FIN CALCULO DE PINTURA-----------------------------|";
 	Escribir "";
 FinSubProceso
